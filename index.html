@@ -1,0 +1,29 @@
+cd ~/merge-city-game
+cat > index.html << 'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merge City</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="topbar">
+    <div id="coins">💰 <span id="coin-count">0</span></div>
+    <div id="income">⚡ <span id="income-rate">0</span>/sec</div>
+  </div>
+
+  <div id="grid"></div>
+
+  <div id="controls">
+    <button id="spawn-btn">+ New Building</button>
+    <button id="reset-btn">Reset</button>
+  </div>
+
+  <div id="toast"></div>
+
+  <script src="game.js"></script>
+</body>
+</html>
+EOF
